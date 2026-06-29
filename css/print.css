@@ -1,0 +1,154 @@
+/* ==========================================================
+   CV PREMIUM 2026
+   PRINT.CSS
+   Composant 1/8 - Fondations A4
+   ========================================================== */
+
+/* ---------- Paramètres de la page ---------- */
+
+@page {
+    size: A4 portrait;
+    margin: 0;
+}
+
+/* ---------- Réinitialisation ---------- */
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+}
+
+html{
+    margin:0;
+    padding:0;
+    width:210mm;
+    background:#ffffff;
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:210mm;
+    background:#ffffff;
+    color:#1f2937;
+    font-family:Inter, Arial, Helvetica, sans-serif;
+    overflow:visible;
+}
+
+/* ---------- Masquage des éléments écran ---------- */
+
+.no-print{
+    display:none !important;
+}
+
+/* ---------- Conteneur principal ---------- */
+
+.cv-container{
+
+    width:210mm;
+    min-height:297mm;
+
+    margin:0 auto;
+    padding:0;
+
+    background:#fff;
+
+    overflow:hidden;
+}
+
+/* ---------- Chaque page ---------- */
+
+.page{
+
+    position:relative;
+
+    width:210mm;
+    height:297mm;
+
+    overflow:hidden;
+
+    page-break-after:always;
+    break-after:page;
+}
+
+.page:last-child{
+    page-break-after:auto;
+    break-after:auto;
+}
+
+/* ---------- Images ---------- */
+
+img{
+
+    max-width:100%;
+    display:block;
+
+    image-rendering:auto;
+
+    break-inside:avoid;
+}
+
+/* ---------- Tableaux ---------- */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+    break-inside:avoid;
+}
+
+/* ---------- Titres ---------- */
+
+h1,h2,h3,h4,h5,h6{
+
+    break-after:avoid;
+    page-break-after:avoid;
+
+    margin-top:0;
+}
+
+/* ---------- Paragraphes ---------- */
+
+p,
+li,
+ul,
+ol{
+
+    orphans:3;
+    widows:3;
+}
+
+/* ---------- Éviter les coupures ---------- */
+
+.card,
+.section,
+.timeline-item,
+.skill,
+.experience,
+.education,
+.languages,
+.certification,
+.project{
+
+    break-inside:avoid;
+    page-break-inside:avoid;
+}
+
+/* ---------- Liens ---------- */
+
+a{
+
+    color:inherit;
+    text-decoration:none;
+}
+
+/* ---------- SVG ---------- */
+
+svg{
+
+    overflow:visible;
+}

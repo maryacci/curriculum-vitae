@@ -1,0 +1,4400 @@
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 01/15
+   DESIGN SYSTEM • RESET • VARIABLES • BASE
+=================================================================== */
+
+/* ===================================================================
+   VARIABLES
+=================================================================== */
+
+:root{
+
+    /* ===== Couleurs ===== */
+
+    --color-primary:#0F2745;
+    --color-primary-light:#183A63;
+    --color-accent:#C8A24D;
+
+    --color-white:#FFFFFF;
+
+    --color-bg:#F4F6F9;
+
+    --color-card:#FFFFFF;
+
+    --color-border:#E5EAF0;
+
+    --color-text:#1F2937;
+
+    --color-text-light:#6B7280;
+
+    --color-success:#2E8B57;
+
+    /* ===== Typographie ===== */
+
+    --font-main:"Inter",sans-serif;
+
+    --font-size-xs:.75rem;
+    --font-size-sm:.88rem;
+    --font-size-base:1rem;
+    --font-size-lg:1.15rem;
+    --font-size-xl:1.45rem;
+    --font-size-2xl:2rem;
+    --font-size-3xl:2.8rem;
+
+    --line-height:1.65;
+
+    /* ===== Espacements ===== */
+
+    --space-1:4px;
+    --space-2:8px;
+    --space-3:12px;
+    --space-4:16px;
+    --space-5:20px;
+    --space-6:24px;
+    --space-7:32px;
+    --space-8:40px;
+    --space-9:56px;
+
+    /* ===== Radius ===== */
+
+    --radius-sm:8px;
+    --radius:14px;
+    --radius-lg:22px;
+    --radius-xl:32px;
+
+    /* ===== Ombres ===== */
+
+    --shadow-sm:
+        0 2px 6px rgba(15,39,69,.05);
+
+    --shadow:
+        0 8px 24px rgba(15,39,69,.08);
+
+    --shadow-lg:
+        0 18px 48px rgba(15,39,69,.14);
+
+    /* ===== Layout ===== */
+
+    --page-width:210mm;
+
+    --page-max:1200px;
+
+    --sidebar-width:320px;
+
+}
+
+/* ===================================================================
+   RESET
+=================================================================== */
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+    font-size:16px;
+
+}
+
+body{
+
+    font-family:var(--font-main);
+
+    background:var(--color-bg);
+
+    color:var(--color-text);
+
+    line-height:var(--line-height);
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+svg{
+
+    display:block;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+button{
+
+    font:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ===================================================================
+   BASE
+=================================================================== */
+
+.page{
+
+    width:min(var(--page-max),100%);
+
+    margin:48px auto;
+
+    background:var(--color-white);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+section{
+
+    position:relative;
+
+}
+
+h1,h2,h3,h4{
+
+    color:var(--color-primary);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+h1{
+
+    font-size:var(--font-size-3xl);
+
+}
+
+h2{
+
+    font-size:var(--font-size-2xl);
+
+}
+
+h3{
+
+    font-size:var(--font-size-xl);
+
+}
+
+h4{
+
+    font-size:var(--font-size-lg);
+
+}
+
+p{
+
+    color:var(--color-text-light);
+
+}
+
+strong{
+
+    color:var(--color-primary);
+
+}
+
+.section-heading{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    margin-bottom:36px;
+
+}
+
+.section-index{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    font-weight:800;
+
+    font-size:1rem;
+
+    flex-shrink:0;
+
+}
+
+.section-description{
+
+    margin-top:8px;
+
+    font-size:.95rem;
+
+    color:var(--color-text-light);
+
+}
+
+.card{
+
+    background:var(--color-card);
+
+    border:1px solid var(--color-border);
+
+    border-radius:var(--radius);
+
+    padding:22px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:#EDF3FA;
+
+    color:var(--color-primary);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+.icon{
+
+    width:18px;
+
+    height:18px;
+
+    fill:currentColor;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+.mt-1{margin-top:var(--space-1);}
+.mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);}
+.mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);}
+.mt-6{margin-top:var(--space-6);}
+.mt-7{margin-top:var(--space-7);}
+.mt-8{margin-top:var(--space-8);}
+
+.mb-1{margin-bottom:var(--space-1);}
+.mb-2{margin-bottom:var(--space-2);}
+.mb-3{margin-bottom:var(--space-3);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-5{margin-bottom:var(--space-5);}
+.mb-6{margin-bottom:var(--space-6);}
+.mb-7{margin-bottom:var(--space-7);}
+.mb-8{margin-bottom:var(--space-8);}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 02/15
+   PAGE • LAYOUT • HERO
+=================================================================== */
+
+/* ===================================================================
+   HERO
+=================================================================== */
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    gap:48px;
+
+    align-items:center;
+
+    padding:56px 64px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--color-primary) 0%,
+            var(--color-primary-light) 100%
+        );
+
+    color:#fff;
+
+}
+
+.hero-photo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.profile-photo{
+
+    width:180px !important;
+
+    height:180px !important;
+
+    min-width:180px;
+
+    min-height:180px;
+
+    max-width:180px;
+
+    max-height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid rgba(255,255,255,.95);
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.30);
+
+}
+
+.hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.hero-label{
+
+    display:inline-flex;
+
+    align-self:flex-start;
+
+    padding:8px 18px;
+
+    margin-bottom:22px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.14);
+
+    border:1px solid rgba(255,255,255,.20);
+
+    color:#fff;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+}
+
+.hero h1{
+
+    margin-bottom:8px;
+
+    color:#fff;
+
+    font-size:3.2rem;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+.hero h1 span{
+
+    color:var(--color-accent);
+
+}
+
+.hero h2{
+
+    margin-bottom:10px;
+
+    color:#fff;
+
+    font-size:1.65rem;
+
+    font-weight:500;
+
+}
+
+.hero-job{
+
+    color:rgba(255,255,255,.88);
+
+    font-size:1rem;
+
+    letter-spacing:.05em;
+
+    text-transform:uppercase;
+
+}
+
+.hero-divider{
+
+    width:90px;
+
+    height:4px;
+
+    margin:26px 0;
+
+    border-radius:999px;
+
+    background:var(--color-accent);
+
+}
+
+.hero-summary{
+
+    max-width:760px;
+
+    margin-bottom:18px;
+
+    color:rgba(255,255,255,.93);
+
+    font-size:1rem;
+
+}
+
+.hero-summary strong{
+
+    color:#fff;
+
+}
+
+.hero-badges{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:12px;
+
+}
+
+.hero-badges .badge{
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    color:#fff;
+
+    box-shadow:none;
+
+}
+
+.hero-footer{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-top:34px;
+
+}
+
+.hero-item{
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    text-align:center;
+
+}
+
+.hero-item strong{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:#fff;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+}
+
+.hero-item span{
+
+    color:rgba(255,255,255,.82);
+
+    font-size:.88rem;
+
+    line-height:1.4;
+
+}
+
+/* ===================================================================
+   LAYOUT
+=================================================================== */
+
+.layout{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:42px;
+
+    padding:48px;
+
+    align-items:start;
+
+}
+
+.sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:42px;
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 03/15
+   SIDEBAR
+=================================================================== */
+
+.sidebar .card{
+
+    padding:24px;
+
+    border:none;
+
+    border-left:5px solid var(--color-primary);
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:var(--shadow);
+
+    transition:.30s;
+
+}
+
+.sidebar .card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 16px 36px rgba(15,39,69,.12);
+
+}
+
+.card-title{
+
+    margin-bottom:18px;
+
+    padding-bottom:10px;
+
+    border-bottom:2px solid var(--color-border);
+
+    color:var(--color-primary);
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.contact-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+    color:var(--color-text);
+
+    font-size:.95rem;
+
+}
+
+.contact-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.contact-item .icon{
+
+    width:20px;
+
+    height:20px;
+
+    color:var(--color-accent);
+
+    flex-shrink:0;
+
+    margin-top:2px;
+
+}
+
+.sidebar p{
+
+    color:var(--color-text-light);
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+.skill{
+
+    margin-bottom:18px;
+
+}
+
+.skill:last-child{
+
+    margin-bottom:0;
+
+}
+
+.skill>span,
+.skill>strong{
+
+    display:block;
+
+    margin-bottom:8px;
+
+}
+
+.skill-bar{
+
+    width:100%;
+
+    height:8px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#E8EDF3;
+
+}
+
+.skill-bar span{
+
+    display:block;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--color-primary),
+        var(--color-accent)
+    );
+
+}
+
+.software-list{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:10px;
+
+}
+
+.software-list li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 12px;
+
+    border-radius:10px;
+
+    background:#F8FAFC;
+
+    color:var(--color-text);
+
+    font-size:.92rem;
+
+}
+
+.software-list li::before{
+
+    content:"■";
+
+    color:var(--color-accent);
+
+    font-size:.75rem;
+
+}
+
+.check-list{
+
+    display:grid;
+
+    gap:12px;
+
+}
+
+.check-list li{
+
+    position:relative;
+
+    padding-left:24px;
+
+    color:var(--color-text);
+
+    font-size:.94rem;
+
+}
+
+.check-list li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    color:var(--color-success);
+
+    font-weight:700;
+
+}
+
+.language-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+.language-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.language-item strong{
+
+    color:var(--color-accent);
+
+    letter-spacing:2px;
+
+}
+
+.sidebar .qualification-content h4{
+
+    margin-bottom:10px;
+
+    font-size:1.1rem;
+
+}
+
+.sidebar .qualification-content p{
+
+    margin-bottom:8px;
+
+}
+
+.sidebar .badge{
+
+    margin:4px 6px 4px 0;
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 04/15
+   PROFIL EXECUTIF • KPI • CARTES
+=================================================================== */
+
+/* ===================================================================
+   EXECUTIVE OVERVIEW
+=================================================================== */
+
+.executive-overview{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:34px;
+
+}
+
+.kpi-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.kpi-card{
+
+    padding:28px 22px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:.25s;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+        0 20px 40px rgba(15,39,69,.12);
+
+}
+
+.kpi-number{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    color:var(--color-primary);
+
+    font-size:2.2rem;
+
+    font-weight:800;
+
+    line-height:1;
+
+}
+
+.kpi-label{
+
+    display:block;
+
+    color:var(--color-text-light);
+
+    font-size:.90rem;
+
+    line-height:1.45;
+
+}
+
+.executive-card{
+
+    padding:34px;
+
+    background:#fff;
+
+    border-left:6px solid var(--color-accent);
+
+    border-radius:20px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.executive-card p{
+
+    margin-bottom:18px;
+
+    color:var(--color-text);
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+.executive-card p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===================================================================
+   VALUE SECTION
+=================================================================== */
+
+.value-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:32px;
+
+}
+
+.value-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.value-card{
+
+    padding:26px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.25s;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 16px 34px rgba(15,39,69,.10);
+
+}
+
+.value-card h3{
+
+    margin-bottom:14px;
+
+    color:var(--color-primary);
+
+    font-size:1.08rem;
+
+}
+
+.value-card p{
+
+    color:var(--color-text-light);
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+/* ===================================================================
+   EXPERIENCE - BASE
+=================================================================== */
+
+.experience,
+.experience-featured{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    padding:34px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.experience-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding-bottom:22px;
+
+    border-bottom:2px solid var(--color-border);
+
+}
+
+.experience-company h2{
+
+    margin:8px 0;
+
+    font-size:1.55rem;
+
+}
+
+.experience-company h3{
+
+    color:var(--color-accent);
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+}
+
+.experience-date{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:#EEF3F9;
+
+    color:var(--color-primary);
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+}
+
+.experience-status{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:var(--color-success);
+
+    color:#fff;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+.experience-location{
+
+    margin-top:8px;
+
+    color:var(--color-text-light);
+
+    font-size:.90rem;
+
+}
+
+.experience-introduction{
+
+    padding:22px 24px;
+
+    background:#F8FAFC;
+
+    border-left:5px solid var(--color-primary);
+
+    border-radius:14px;
+
+}
+
+.experience-introduction p{
+
+    color:var(--color-text);
+
+    line-height:1.8;
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 05/15
+   EXPERIENCES • CARTES • PROMOTION • ENVIRONNEMENT
+=================================================================== */
+
+/* ===================================================================
+   PROMOTION
+=================================================================== */
+
+.promotion-banner{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+    padding:22px 26px;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(200,162,77,.10),
+        rgba(200,162,77,.18)
+    );
+
+    border:1px solid rgba(200,162,77,.35);
+
+}
+
+.promotion-icon{
+
+    width:64px;
+
+    height:64px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:var(--color-accent);
+
+    color:#fff;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+}
+
+.promotion-text h4{
+
+    margin-bottom:8px;
+
+    color:var(--color-primary);
+
+}
+
+.promotion-text p{
+
+    color:var(--color-text);
+
+    line-height:1.75;
+
+}
+
+/* ===================================================================
+   EXPERIENCE GRID
+=================================================================== */
+
+.experience-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.experience-card{
+
+    padding:24px;
+
+    background:#fff;
+
+    border:1px solid var(--color-border);
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.25s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 18px 36px rgba(15,39,69,.10);
+
+}
+
+.experience-card h4{
+
+    margin-bottom:18px;
+
+    padding-bottom:10px;
+
+    border-bottom:2px solid var(--color-border);
+
+    color:var(--color-primary);
+
+    font-size:1rem;
+
+}
+
+.experience-card ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.experience-card li{
+
+    position:relative;
+
+    padding-left:22px;
+
+    color:var(--color-text);
+
+    line-height:1.6;
+
+    font-size:.94rem;
+
+}
+
+.experience-card li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:9px;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--color-accent);
+
+}
+
+/* ===================================================================
+   ENVIRONNEMENT
+=================================================================== */
+
+.environment-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.environment-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.environment-card{
+
+    padding:22px;
+
+    background:#F8FAFC;
+
+    border-radius:18px;
+
+    border:1px solid var(--color-border);
+
+    text-align:center;
+
+}
+
+.environment-number{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--color-primary);
+
+    font-size:1.55rem;
+
+    font-weight:800;
+
+}
+
+.environment-label{
+
+    display:block;
+
+    color:var(--color-text-light);
+
+    font-size:.86rem;
+
+    line-height:1.45;
+
+}
+
+/* ===================================================================
+   IMPACT
+=================================================================== */
+
+.impact-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.impact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.impact-card{
+
+    padding:24px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.impact-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--color-primary);
+
+}
+
+.impact-card p{
+
+    color:var(--color-text-light);
+
+    line-height:1.7;
+
+}
+
+/* ===================================================================
+   SKILLS CLOUD
+=================================================================== */
+
+.skills-showcase{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.skills-cloud{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.skill-badge{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#EDF3FA;
+
+    border:1px solid #D9E5F2;
+
+    color:var(--color-primary);
+
+    font-size:.88rem;
+
+    font-weight:600;
+
+    transition:.20s;
+
+}
+
+.skill-badge:hover{
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+}
+
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 06/15
+   EXPERIENCE FEATURED • TIMELINE • CLIENTS
+=================================================================== */
+
+/* ===================================================================
+   EXPERIENCE FEATURED
+=================================================================== */
+
+.experience-featured{
+
+    border-top:8px solid var(--color-primary);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.experience-featured::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:220px;
+
+    height:220px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(200,162,77,.12),
+            transparent 70%
+        );
+
+    pointer-events:none;
+
+}
+
+.experience-featured .experience-header{
+
+    align-items:center;
+
+}
+
+.experience-featured h2{
+
+    font-size:2rem;
+
+}
+
+.experience-featured h3{
+
+    font-size:1.2rem;
+
+}
+
+/* ===================================================================
+   EXPERIENCE STANDARD
+=================================================================== */
+
+.experience{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.experience::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:6px;
+
+    height:100%;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            var(--color-primary),
+            var(--color-accent)
+        );
+
+}
+
+/* ===================================================================
+   CLIENTS
+=================================================================== */
+
+.clients-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.client-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.client-badge{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--color-border);
+
+    color:var(--color-primary);
+
+    font-size:.90rem;
+
+    font-weight:700;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.20s;
+
+}
+
+.client-badge:hover{
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+}
+
+/* ===================================================================
+   TIMELINE
+=================================================================== */
+
+.timeline{
+
+    position:relative;
+
+    margin-top:16px;
+
+    padding-left:34px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:10px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:var(--color-border);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:120px 1fr;
+
+    gap:28px;
+
+    margin-bottom:34px;
+
+}
+
+.timeline-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-29px;
+
+    top:10px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    border:4px solid #fff;
+
+    background:var(--color-accent);
+
+    box-shadow:0 0 0 2px var(--color-primary);
+
+}
+
+.timeline-date{
+
+    color:var(--color-primary);
+
+    font-size:1rem;
+
+    font-weight:800;
+
+}
+
+.timeline-content{
+
+    padding:22px;
+
+    background:#fff;
+
+    border:1px solid var(--color-border);
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.timeline-content h3{
+
+    margin-bottom:6px;
+
+    font-size:1.15rem;
+
+}
+
+.timeline-content h4{
+
+    margin-bottom:10px;
+
+    color:var(--color-accent);
+
+    font-size:.98rem;
+
+}
+
+.timeline-content p{
+
+    color:var(--color-text-light);
+
+    line-height:1.65;
+
+}
+
+/* ===================================================================
+   CAREER SUMMARY
+=================================================================== */
+
+.career-summary{
+
+    margin-top:32px;
+
+    padding:28px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        #F8FAFC,
+        #EEF3F9
+    );
+
+    border:1px solid var(--color-border);
+
+}
+
+.career-summary h3{
+
+    margin-bottom:14px;
+
+    color:var(--color-primary);
+
+}
+
+.career-summary p{
+
+    color:var(--color-text);
+
+    line-height:1.8;
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 07/15
+   EXPERTISES • FORMATION • LANGUES • LOGICIELS
+=================================================================== */
+
+/* ===================================================================
+   EXPERTISES
+=================================================================== */
+
+.expertise-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:34px;
+
+}
+
+.expertise-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.expertise-card{
+
+    padding:26px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.25s;
+
+}
+
+.expertise-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+        0 18px 36px rgba(15,39,69,.10);
+
+}
+
+.expertise-card h3{
+
+    margin-bottom:12px;
+
+    color:var(--color-primary);
+
+}
+
+.level{
+
+    margin-bottom:16px;
+
+    color:var(--color-accent);
+
+    font-size:1rem;
+
+    letter-spacing:4px;
+
+    font-weight:700;
+
+}
+
+.expertise-card p{
+
+    color:var(--color-text-light);
+
+    line-height:1.75;
+
+}
+
+/* ===================================================================
+   FORMATION
+=================================================================== */
+
+.qualification-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:34px;
+
+}
+
+.qualification-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.qualification-card{
+
+    padding:28px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.qualification-card h3{
+
+    margin-bottom:20px;
+
+    padding-bottom:12px;
+
+    border-bottom:2px solid var(--color-border);
+
+    color:var(--color-primary);
+
+}
+
+.qualification-content h4{
+
+    margin-bottom:12px;
+
+    color:var(--color-primary);
+
+}
+
+.qualification-content p{
+
+    margin-bottom:10px;
+
+    color:var(--color-text);
+
+}
+
+/* ===================================================================
+   LANGUES
+=================================================================== */
+
+.language-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+.language-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.language-item span{
+
+    color:var(--color-text);
+
+    font-weight:600;
+
+}
+
+.language-item strong{
+
+    color:var(--color-accent);
+
+    letter-spacing:3px;
+
+}
+
+/* ===================================================================
+   LOGICIELS
+=================================================================== */
+
+.software-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+.software-grid span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 14px;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    color:var(--color-text);
+
+    font-size:.92rem;
+
+}
+
+.software-grid span::before{
+
+    content:"■";
+
+    color:var(--color-accent);
+
+    font-size:.75rem;
+
+}
+
+/* ===================================================================
+   ATOUTS
+=================================================================== */
+
+.qualification-card ul{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+.qualification-card li{
+
+    position:relative;
+
+    padding-left:24px;
+
+    color:var(--color-text);
+
+    line-height:1.6;
+
+}
+
+.qualification-card li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:var(--color-success);
+
+    font-weight:700;
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 08/15
+   HIGHLIGHTS • REFERENCES • FOOTER PREMIUM
+=================================================================== */
+
+/* ===================================================================
+   FAITS MARQUANTS
+=================================================================== */
+
+.highlights-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:34px;
+
+}
+
+.highlights-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.highlight-card{
+
+    padding:26px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.25s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 36px rgba(15,39,69,.10);
+
+}
+
+.highlight-card h3{
+
+    margin-bottom:14px;
+
+    color:var(--color-primary);
+
+    font-size:1.1rem;
+
+}
+
+.highlight-card p{
+
+    color:var(--color-text-light);
+
+    line-height:1.75;
+
+}
+
+.career-vision{
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        #F8FAFC,
+        #EEF3F9
+    );
+
+    border-left:6px solid var(--color-accent);
+
+}
+
+.career-vision h3{
+
+    margin-bottom:16px;
+
+}
+
+.career-vision p{
+
+    color:var(--color-text);
+
+    line-height:1.8;
+
+}
+
+/* ===================================================================
+   REFERENCES
+=================================================================== */
+
+.references-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:34px;
+
+}
+
+.references-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.reference-card{
+
+    padding:26px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.reference-card h3{
+
+    margin-bottom:18px;
+
+    padding-bottom:10px;
+
+    border-bottom:2px solid var(--color-border);
+
+    color:var(--color-primary);
+
+}
+
+.reference-card p{
+
+    color:var(--color-text-light);
+
+    line-height:1.75;
+
+}
+
+.reference-card ul{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+.reference-card li{
+
+    color:var(--color-text);
+
+    line-height:1.6;
+
+}
+
+.closing-message{
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:var(--color-primary);
+
+    text-align:center;
+
+}
+
+.closing-message p{
+
+    color:#fff;
+
+    line-height:1.9;
+
+    font-size:1rem;
+
+}
+
+/* ===================================================================
+   FOOTER PREMIUM
+=================================================================== */
+
+.premium-footer{
+
+    margin-top:50px;
+
+    padding:50px;
+
+    background:linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-primary-light)
+    );
+
+    color:#fff;
+
+}
+
+.footer-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.footer-content h2{
+
+    color:#fff;
+
+    font-size:2.2rem;
+
+    margin-bottom:8px;
+
+}
+
+.footer-content h3{
+
+    color:var(--color-accent);
+
+    font-size:1.2rem;
+
+    margin-bottom:16px;
+
+}
+
+.footer-subtitle{
+
+    color:rgba(255,255,255,.85);
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+.footer-divider{
+
+    width:120px;
+
+    height:4px;
+
+    margin:28px 0;
+
+    border-radius:999px;
+
+    background:var(--color-accent);
+
+}
+
+.footer-contact{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:26px;
+
+    margin-bottom:24px;
+
+}
+
+.footer-contact span{
+
+    color:#fff;
+
+    font-size:.95rem;
+
+}
+
+.footer-bottom{
+
+    padding-top:18px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    width:100%;
+
+}
+
+.footer-bottom span{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:.9rem;
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 09/15
+   RESPONSIVE • TABLET • MOBILE
+=================================================================== */
+
+/* ===================================================================
+   LARGE SCREENS
+=================================================================== */
+
+@media (max-width:1400px){
+
+    .page{
+
+        width:96%;
+
+    }
+
+}
+
+/* ===================================================================
+   LAPTOP
+=================================================================== */
+
+@media (max-width:1200px){
+
+    .layout{
+
+        grid-template-columns:280px 1fr;
+
+        gap:32px;
+
+        padding:36px;
+
+    }
+
+    .hero{
+
+        grid-template-columns:220px 1fr;
+
+        gap:36px;
+
+        padding:42px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.7rem;
+
+    }
+
+    .hero-footer{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+    .kpi-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .environment-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .experience-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .impact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ===================================================================
+   TABLET
+=================================================================== */
+
+@media (max-width:992px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .hero-photo{
+
+        margin-bottom:12px;
+
+    }
+
+    .hero-content{
+
+        align-items:center;
+
+    }
+
+    .hero-label{
+
+        align-self:center;
+
+    }
+
+    .hero-divider{
+
+        margin:22px auto;
+
+    }
+
+    .layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sidebar{
+
+        order:2;
+
+    }
+
+    .content{
+
+        order:1;
+
+    }
+
+    .qualification-grid,
+
+    .expertise-grid,
+
+    .highlights-grid,
+
+    .references-grid,
+
+    .value-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .timeline-item{
+
+        grid-template-columns:1fr;
+
+        gap:12px;
+
+    }
+
+    .timeline{
+
+        padding-left:26px;
+
+    }
+
+    .timeline::before{
+
+        left:7px;
+
+    }
+
+    .timeline-item::before{
+
+        left:-23px;
+
+    }
+
+}
+
+/* ===================================================================
+   MOBILE
+=================================================================== */
+
+@media (max-width:768px){
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .page{
+
+        width:100%;
+
+        margin:0;
+
+        border-radius:0;
+
+        box-shadow:none;
+
+    }
+
+    .hero{
+
+        padding:32px 24px;
+
+    }
+
+    .profile-photo{
+
+        width:150px !important;
+
+        height:150px !important;
+
+        min-width:150px;
+
+        min-height:150px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.3rem;
+
+    }
+
+    .hero-footer{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .layout{
+
+        padding:24px;
+
+    }
+
+    .section-heading{
+
+        flex-direction:column;
+
+        gap:16px;
+
+    }
+
+    .section-index{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+    .environment-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .software-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-contact{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+}
+
+/* ===================================================================
+   SMALL MOBILE
+=================================================================== */
+
+@media (max-width:480px){
+
+    .hero{
+
+        padding:24px 18px;
+
+    }
+
+    .layout{
+
+        padding:18px;
+
+    }
+
+    .experience,
+
+    .experience-featured,
+
+    .qualification-card,
+
+    .reference-card,
+
+    .highlight-card,
+
+    .expertise-card,
+
+    .value-card,
+
+    .executive-card{
+
+        padding:20px;
+
+    }
+
+    .kpi-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 10/15
+   PRINT OPTIMIZATION • A4 • PAGINATION
+=================================================================== */
+
+@media print{
+
+    @page{
+
+        size:A4;
+
+        margin:12mm;
+
+    }
+
+    html,
+    body{
+
+        background:#fff !important;
+
+        margin:0;
+
+        padding:0;
+
+        font-size:10pt;
+
+        color:#000;
+
+    }
+
+    .page{
+
+        width:100%;
+
+        margin:0;
+
+        padding:0;
+
+        border-radius:0;
+
+        box-shadow:none;
+
+    }
+
+    .hero{
+
+        padding:12mm;
+
+    }
+
+    .layout{
+
+        grid-template-columns:28% 72%;
+
+        gap:8mm;
+
+        padding:8mm 12mm 12mm;
+
+    }
+
+    .sidebar{
+
+        gap:5mm;
+
+    }
+
+    .content{
+
+        gap:6mm;
+
+    }
+
+    .card,
+    .experience,
+    .experience-featured,
+    .qualification-card,
+    .reference-card,
+    .highlight-card,
+    .expertise-card,
+    .value-card,
+    .executive-card{
+
+        box-shadow:none;
+
+        border:1px solid #DDD;
+
+        page-break-inside:avoid;
+
+        break-inside:avoid;
+
+    }
+
+    .experience-header{
+
+        page-break-after:avoid;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4{
+
+        page-break-after:avoid;
+
+        break-after:avoid;
+
+    }
+
+    p,
+    li{
+
+        orphans:3;
+
+        widows:3;
+
+    }
+
+    img{
+
+        page-break-inside:avoid;
+
+    }
+
+    .hero-footer{
+
+        gap:4mm;
+
+    }
+
+    .hero-item{
+
+        padding:4mm;
+
+    }
+
+    .kpi-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+        gap:4mm;
+
+    }
+
+    .experience-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:4mm;
+
+    }
+
+    .impact-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:4mm;
+
+    }
+
+    .environment-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+        gap:4mm;
+
+    }
+
+    .qualification-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:4mm;
+
+    }
+
+    .expertise-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:4mm;
+
+    }
+
+    .references-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:4mm;
+
+    }
+
+    .highlights-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:4mm;
+
+    }
+
+    .value-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+        gap:4mm;
+
+    }
+
+    .timeline-item{
+
+        margin-bottom:5mm;
+
+    }
+
+    .premium-footer{
+
+        page-break-inside:avoid;
+
+        break-inside:avoid;
+
+    }
+
+    .hero,
+    .executive-overview,
+    .experience-featured{
+
+        break-after:avoid-page;
+
+    }
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 11/15
+   MICRO ANIMATIONS • FINITIONS • PREMIUM EFFECTS
+=================================================================== */
+
+/* ===================================================================
+   TRANSITIONS
+=================================================================== */
+
+.hero,
+.card,
+.kpi-card,
+.value-card,
+.experience-card,
+.environment-card,
+.impact-card,
+.expertise-card,
+.qualification-card,
+.reference-card,
+.highlight-card,
+.timeline-content,
+.client-badge,
+.skill-badge{
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background-color .25s ease;
+
+}
+
+/* ===================================================================
+   PREMIUM HOVER
+=================================================================== */
+
+.card:hover,
+.kpi-card:hover,
+.value-card:hover,
+.experience-card:hover,
+.environment-card:hover,
+.impact-card:hover,
+.expertise-card:hover,
+.qualification-card:hover,
+.reference-card:hover,
+.highlight-card:hover,
+.timeline-content:hover{
+
+    border-color:rgba(200,162,77,.45);
+
+}
+
+/* ===================================================================
+   SELECTION
+=================================================================== */
+
+::selection{
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+}
+
+/* ===================================================================
+   SCROLLBAR
+=================================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#EEF2F6;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-primary);
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-primary-light);
+
+}
+
+/* ===================================================================
+   FOCUS
+=================================================================== */
+
+a:focus-visible,
+button:focus-visible{
+
+    outline:3px solid var(--color-accent);
+
+    outline-offset:3px;
+
+}
+
+/* ===================================================================
+   TITRES
+=================================================================== */
+
+.section-heading h2{
+
+    letter-spacing:-.02em;
+
+}
+
+.section-heading p{
+
+    max-width:720px;
+
+}
+
+/* ===================================================================
+   LIGNES DECORATIVES
+=================================================================== */
+
+.section-heading::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:72px;
+
+    bottom:-14px;
+
+    width:90px;
+
+    height:3px;
+
+    border-radius:999px;
+
+    background:var(--color-accent);
+
+}
+
+/* ===================================================================
+   LISTES
+=================================================================== */
+
+.experience-card li,
+.reference-card li,
+.qualification-card li{
+
+    transition:padding-left .20s ease;
+
+}
+
+.experience-card li:hover,
+.reference-card li:hover,
+.qualification-card li:hover{
+
+    padding-left:28px;
+
+}
+
+/* ===================================================================
+   BADGES
+=================================================================== */
+
+.badge,
+.skill-badge,
+.client-badge{
+
+    user-select:none;
+
+}
+
+.badge:hover,
+.skill-badge:hover,
+.client-badge:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===================================================================
+   PHOTO
+=================================================================== */
+
+.profile-photo{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.profile-photo:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+        0 24px 50px rgba(0,0,0,.28);
+
+}
+
+/* ===================================================================
+   FOOTER
+=================================================================== */
+
+.footer-divider{
+
+    opacity:.9;
+
+}
+
+.footer-content h2{
+
+    letter-spacing:-.02em;
+
+}
+
+.footer-content h3{
+
+    letter-spacing:.04em;
+
+}
+
+/* ===================================================================
+   IMPRESSION
+=================================================================== */
+
+@media print{
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+    }
+
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 12/15
+   UTILITIES • HELPERS • COLOR SYSTEM • SPACING
+=================================================================== */
+
+/* ===================================================================
+   DISPLAY
+=================================================================== */
+
+.d-none{display:none!important;}
+.d-block{display:block!important;}
+.d-inline{display:inline!important;}
+.d-inline-block{display:inline-block!important;}
+.d-flex{display:flex!important;}
+.d-grid{display:grid!important;}
+
+.flex-column{flex-direction:column!important;}
+.flex-row{flex-direction:row!important;}
+.flex-wrap{flex-wrap:wrap!important;}
+
+.align-center{align-items:center!important;}
+.align-start{align-items:flex-start!important;}
+.align-end{align-items:flex-end!important;}
+
+.justify-center{justify-content:center!important;}
+.justify-between{justify-content:space-between!important;}
+.justify-around{justify-content:space-around!important;}
+
+.gap-1{gap:4px!important;}
+.gap-2{gap:8px!important;}
+.gap-3{gap:12px!important;}
+.gap-4{gap:16px!important;}
+.gap-5{gap:20px!important;}
+.gap-6{gap:24px!important;}
+.gap-7{gap:32px!important;}
+.gap-8{gap:40px!important;}
+
+/* ===================================================================
+   WIDTH
+=================================================================== */
+
+.w-25{width:25%!important;}
+.w-33{width:33.333%!important;}
+.w-50{width:50%!important;}
+.w-66{width:66.666%!important;}
+.w-75{width:75%!important;}
+.w-100{width:100%!important;}
+
+.max-600{max-width:600px!important;}
+.max-700{max-width:700px!important;}
+.max-800{max-width:800px!important;}
+.max-900{max-width:900px!important;}
+
+/* ===================================================================
+   MARGINS
+=================================================================== */
+
+.m-0{margin:0!important;}
+
+.mt-auto{margin-top:auto!important;}
+.mb-auto{margin-bottom:auto!important;}
+.ml-auto{margin-left:auto!important;}
+.mr-auto{margin-right:auto!important;}
+
+.pt-0{padding-top:0!important;}
+.pb-0{padding-bottom:0!important;}
+.pl-0{padding-left:0!important;}
+.pr-0{padding-right:0!important;}
+
+/* ===================================================================
+   TYPOGRAPHY
+=================================================================== */
+
+.fw-300{font-weight:300!important;}
+.fw-400{font-weight:400!important;}
+.fw-500{font-weight:500!important;}
+.fw-600{font-weight:600!important;}
+.fw-700{font-weight:700!important;}
+.fw-800{font-weight:800!important;}
+
+.fs-xs{font-size:.75rem!important;}
+.fs-sm{font-size:.88rem!important;}
+.fs-base{font-size:1rem!important;}
+.fs-lg{font-size:1.15rem!important;}
+.fs-xl{font-size:1.35rem!important;}
+.fs-2xl{font-size:1.8rem!important;}
+
+.uppercase{text-transform:uppercase!important;}
+.capitalize{text-transform:capitalize!important;}
+.lowercase{text-transform:lowercase!important;}
+
+.lh-1{line-height:1!important;}
+.lh-15{line-height:1.5!important;}
+.lh-17{line-height:1.7!important;}
+.lh-2{line-height:2!important;}
+
+.letter-1{letter-spacing:.05em!important;}
+.letter-2{letter-spacing:.10em!important;}
+
+/* ===================================================================
+   COLORS
+=================================================================== */
+
+.text-primary{color:var(--color-primary)!important;}
+.text-accent{color:var(--color-accent)!important;}
+.text-light{color:var(--color-text-light)!important;}
+.text-dark{color:var(--color-text)!important;}
+.text-white{color:#fff!important;}
+
+.bg-primary{background:var(--color-primary)!important;}
+.bg-accent{background:var(--color-accent)!important;}
+.bg-light{background:#F8FAFC!important;}
+.bg-white{background:#fff!important;}
+
+.border-primary{border-color:var(--color-primary)!important;}
+.border-accent{border-color:var(--color-accent)!important;}
+.border-light{border-color:var(--color-border)!important;}
+
+/* ===================================================================
+   SHADOWS
+=================================================================== */
+
+.shadow-none{box-shadow:none!important;}
+.shadow-sm{box-shadow:var(--shadow-sm)!important;}
+.shadow{box-shadow:var(--shadow)!important;}
+.shadow-lg{box-shadow:var(--shadow-lg)!important;}
+
+/* ===================================================================
+   RADIUS
+=================================================================== */
+
+.radius-sm{border-radius:8px!important;}
+.radius{border-radius:14px!important;}
+.radius-lg{border-radius:22px!important;}
+.radius-xl{border-radius:32px!important;}
+.radius-full{border-radius:999px!important;}
+
+/* ===================================================================
+   BORDERS
+=================================================================== */
+
+.border{
+    border:1px solid var(--color-border)!important;
+}
+
+.border-top{
+    border-top:1px solid var(--color-border)!important;
+}
+
+.border-bottom{
+    border-bottom:1px solid var(--color-border)!important;
+}
+
+.border-left{
+    border-left:1px solid var(--color-border)!important;
+}
+
+.border-right{
+    border-right:1px solid var(--color-border)!important;
+}
+
+/* ===================================================================
+   OVERFLOW
+=================================================================== */
+
+.overflow-hidden{
+    overflow:hidden!important;
+}
+
+.position-relative{
+    position:relative!important;
+}
+
+.position-absolute{
+    position:absolute!important;
+}
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 13/15
+   FINAL POLISH • PRINT FIXES • DENSITY OPTIMIZATION
+=================================================================== */
+
+/* ===================================================================
+   PAGE DENSITY
+=================================================================== */
+
+.content > section{
+
+    margin:0;
+
+}
+
+.content > section:not(:last-child){
+
+    margin-bottom:34px;
+
+}
+
+.sidebar .card{
+
+    margin-bottom:0;
+
+}
+
+.sidebar .card:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===================================================================
+   TITLES
+=================================================================== */
+
+.section-heading{
+
+    margin-bottom:28px;
+
+}
+
+.section-heading h2{
+
+    margin-bottom:4px;
+
+}
+
+.section-heading h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:3px;
+
+    margin-top:10px;
+
+    border-radius:999px;
+
+    background:var(--color-accent);
+
+}
+
+/* ===================================================================
+   PARAGRAPHS
+=================================================================== */
+
+p:last-child{
+
+    margin-bottom:0;
+
+}
+
+.experience-introduction p,
+
+.executive-card p,
+
+.career-summary p,
+
+.career-vision p{
+
+    text-align:justify;
+
+}
+
+/* ===================================================================
+   LIST SPACING
+=================================================================== */
+
+.experience-card ul,
+
+.qualification-card ul,
+
+.reference-card ul{
+
+    margin-top:4px;
+
+}
+
+.experience-card li,
+
+.qualification-card li,
+
+.reference-card li{
+
+    margin-bottom:8px;
+
+}
+
+.experience-card li:last-child,
+
+.qualification-card li:last-child,
+
+.reference-card li:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===================================================================
+   BETTER VISUAL BALANCE
+=================================================================== */
+
+.experience-grid{
+
+    align-items:stretch;
+
+}
+
+.environment-grid{
+
+    align-items:stretch;
+
+}
+
+.impact-grid{
+
+    align-items:stretch;
+
+}
+
+.value-grid{
+
+    align-items:stretch;
+
+}
+
+.expertise-grid{
+
+    align-items:stretch;
+
+}
+
+.highlights-grid{
+
+    align-items:stretch;
+
+}
+
+.references-grid{
+
+    align-items:stretch;
+
+}
+
+.qualification-grid{
+
+    align-items:stretch;
+
+}
+
+/* ===================================================================
+   A4 COMPRESSION
+=================================================================== */
+
+@media print{
+
+    .hero{
+
+        padding:8mm 10mm;
+
+    }
+
+    .layout{
+
+        padding:6mm 8mm 8mm;
+
+        gap:6mm;
+
+    }
+
+    .sidebar{
+
+        gap:3mm;
+
+    }
+
+    .content{
+
+        gap:4mm;
+
+    }
+
+    .section-heading{
+
+        margin-bottom:4mm;
+
+    }
+
+    .experience,
+
+    .experience-featured,
+
+    .qualification-card,
+
+    .reference-card,
+
+    .highlight-card,
+
+    .expertise-card,
+
+    .value-card,
+
+    .executive-card,
+
+    .card{
+
+        padding:4mm;
+
+    }
+
+    .promotion-banner{
+
+        padding:4mm;
+
+    }
+
+    .promotion-icon{
+
+        width:14mm;
+
+        height:14mm;
+
+        font-size:12pt;
+
+    }
+
+    .hero-item{
+
+        padding:3mm;
+
+    }
+
+    .hero-item strong{
+
+        font-size:18pt;
+
+    }
+
+    .hero h1{
+
+        font-size:24pt;
+
+    }
+
+    .hero h2{
+
+        font-size:14pt;
+
+    }
+
+    .hero-summary{
+
+        font-size:9pt;
+
+    }
+
+    .kpi-number{
+
+        font-size:18pt;
+
+    }
+
+    .environment-number{
+
+        font-size:16pt;
+
+    }
+
+    .timeline-content{
+
+        padding:4mm;
+
+    }
+
+    .premium-footer{
+
+        margin-top:5mm;
+
+        padding:6mm;
+
+    }
+
+    .footer-divider{
+
+        margin:4mm auto;
+
+    }
+
+    .footer-contact{
+
+        gap:4mm;
+
+    }
+
+    .footer-bottom{
+
+        padding-top:3mm;
+
+    }
+
+}
+
+/* ===================================================================
+   END OF COMPONENT 13
+=================================================================== */
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 14/15
+   FINAL A4 LAYOUT • PAGE BREAKS • PREMIUM PDF
+=================================================================== */
+
+/* ===================================================================
+   PAGE BREAK CONTROL
+=================================================================== */
+
+.hero,
+.executive-overview,
+.value-section,
+.experience,
+.experience-featured,
+.expertise-section,
+.qualification-section,
+.highlights-section,
+.references-section,
+.premium-footer{
+
+    page-break-inside:avoid;
+
+    break-inside:avoid;
+
+}
+
+.section-heading{
+
+    page-break-after:avoid;
+
+    break-after:avoid;
+
+}
+
+.experience-header{
+
+    page-break-after:avoid;
+
+    break-after:avoid;
+
+}
+
+.experience-grid,
+.environment-grid,
+.impact-grid,
+.value-grid,
+.expertise-grid,
+.highlights-grid,
+.references-grid,
+.qualification-grid{
+
+    page-break-inside:avoid;
+
+    break-inside:avoid;
+
+}
+
+/* ===================================================================
+   A4 VISUAL RHYTHM
+=================================================================== */
+
+.content>*{
+
+    scroll-margin-top:40px;
+
+}
+
+.content>section:first-child{
+
+    margin-top:0;
+
+}
+
+.content>section:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===================================================================
+   PREMIUM SEPARATORS
+=================================================================== */
+
+.experience:not(:last-child){
+
+    margin-bottom:38px;
+
+}
+
+.experience::before,
+.experience-featured::before{
+
+    opacity:.40;
+
+}
+
+.section-heading{
+
+    position:relative;
+
+}
+
+.section-heading::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-18px;
+
+    top:6px;
+
+    width:4px;
+
+    height:42px;
+
+    border-radius:999px;
+
+    background:var(--color-accent);
+
+}
+
+/* ===================================================================
+   IMPROVED KPI
+=================================================================== */
+
+.kpi-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.kpi-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--color-primary),
+        var(--color-accent)
+    );
+
+}
+
+/* ===================================================================
+   EXPERIENCE TITLE
+=================================================================== */
+
+.experience-company h2{
+
+    letter-spacing:-.02em;
+
+}
+
+.experience-company h3{
+
+    letter-spacing:.04em;
+
+}
+
+/* ===================================================================
+   CARD CONSISTENCY
+=================================================================== */
+
+.experience-card,
+.environment-card,
+.impact-card,
+.value-card,
+.expertise-card,
+.qualification-card,
+.reference-card,
+.highlight-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+/* ===================================================================
+   PREMIUM PRINT
+=================================================================== */
+
+@media print{
+
+    body{
+
+        zoom:.92;
+
+    }
+
+    .page{
+
+        width:100%;
+
+        max-width:100%;
+
+    }
+
+    .hero{
+
+        border-radius:0;
+
+    }
+
+    .premium-footer{
+
+        border-radius:0;
+
+    }
+
+    .profile-photo{
+
+        width:38mm !important;
+
+        height:38mm !important;
+
+        min-width:38mm;
+
+        min-height:38mm;
+
+        max-width:38mm;
+
+        max-height:38mm;
+
+    }
+
+    .section-index{
+
+        width:11mm;
+
+        height:11mm;
+
+        font-size:9pt;
+
+    }
+
+    .badge,
+    .skill-badge,
+    .client-badge{
+
+        padding:2mm 4mm;
+
+        font-size:8pt;
+
+    }
+
+    .software-grid span{
+
+        padding:2.5mm;
+
+    }
+
+    .hero-footer{
+
+        margin-top:4mm;
+
+    }
+
+    .hero-divider{
+
+        margin:3mm 0;
+
+    }
+
+    .footer-content h2{
+
+        font-size:18pt;
+
+    }
+
+    .footer-content h3{
+
+        font-size:11pt;
+
+    }
+
+    .footer-subtitle{
+
+        font-size:8pt;
+
+    }
+
+    a{
+
+        text-decoration:none;
+
+        color:#000;
+
+    }
+
+}
+
+/* ===================================================================
+   END OF COMPONENT 14
+=================================================================== */
+
+/* ===================================================================
+   CV PREMIUM 2026
+   COMPONENT 15/15
+   FINAL MASTER OVERRIDES
+   (À TOUJOURS LAISSER EN DERNIER DU FICHIER)
+=================================================================== */
+
+/* ===================================================================
+   GLOBAL DENSITY
+=================================================================== */
+
+:root{
+
+    --page-max:1280px;
+
+}
+
+body{
+
+    background:#E9EEF4;
+
+}
+
+.page{
+
+    margin:36px auto;
+
+}
+
+/* ===================================================================
+   HERO FINAL
+=================================================================== */
+
+.hero{
+
+    min-height:320px;
+
+    align-items:center;
+
+}
+
+.hero-summary{
+
+    max-width:720px;
+
+}
+
+.hero-badges{
+
+    margin-top:18px;
+
+}
+
+.hero-footer{
+
+    margin-top:28px;
+
+}
+
+/* ===================================================================
+   SIDEBAR FINAL
+=================================================================== */
+
+.sidebar{
+
+    position:sticky;
+
+    top:24px;
+
+    align-self:start;
+
+}
+
+.sidebar .card{
+
+    overflow:hidden;
+
+}
+
+/* ===================================================================
+   CONTENT FINAL
+=================================================================== */
+
+.content{
+
+    min-width:0;
+
+}
+
+.content>section{
+
+    animation:fadeUp .45s ease both;
+
+}
+
+.content>section:nth-child(2){
+
+    animation-delay:.05s;
+
+}
+
+.content>section:nth-child(3){
+
+    animation-delay:.10s;
+
+}
+
+.content>section:nth-child(4){
+
+    animation-delay:.15s;
+
+}
+
+.content>section:nth-child(5){
+
+    animation-delay:.20s;
+
+}
+
+/* ===================================================================
+   EXPERIENCE FINAL
+=================================================================== */
+
+.experience,
+.experience-featured{
+
+    overflow:hidden;
+
+}
+
+.experience-header{
+
+    align-items:center;
+
+}
+
+.experience-header h2{
+
+    margin-bottom:6px;
+
+}
+
+.experience-card{
+
+    height:100%;
+
+}
+
+.environment-card{
+
+    height:100%;
+
+}
+
+.impact-card{
+
+    height:100%;
+
+}
+
+/* ===================================================================
+   FOOTER FINAL
+=================================================================== */
+
+.premium-footer{
+
+    overflow:hidden;
+
+}
+
+.footer-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/* ===================================================================
+   LINKS
+=================================================================== */
+
+a{
+
+    transition:color .20s ease;
+
+}
+
+a:hover{
+
+    color:var(--color-accent);
+
+}
+
+/* ===================================================================
+   KEYFRAMES
+=================================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(16px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+/* ===================================================================
+   PRINT FINAL
+=================================================================== */
+
+@media print{
+
+    html{
+
+        zoom:1;
+
+    }
+
+    body{
+
+        background:#FFF !important;
+
+    }
+
+    .page{
+
+        margin:0;
+
+        box-shadow:none;
+
+    }
+
+    .sidebar{
+
+        position:static;
+
+    }
+
+    .content>section{
+
+        animation:none !important;
+
+    }
+
+    .experience,
+    .experience-featured{
+
+        margin-bottom:4mm;
+
+    }
+
+    .premium-footer{
+
+        margin-top:4mm;
+
+    }
+
+}
+
+/* ===================================================================
+   END
+=================================================================== */
+
